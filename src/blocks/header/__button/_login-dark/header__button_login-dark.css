@@ -1,0 +1,3 @@
+.header__button_login_dark::after {
+  content: url("../../../../images/logout-dark.svg");
+}

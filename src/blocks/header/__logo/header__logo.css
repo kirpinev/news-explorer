@@ -1,0 +1,23 @@
+@import url("./_light/header__logo_light.css");
+@import url("./_dark/header__logo_dark.css");
+
+.header__logo {
+  font: normal bold 20px/24px Roboto-Slab, Arial, sans-serif;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.header__logo:hover {
+  color: #b6bcbf;
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 101;
+  }
+}

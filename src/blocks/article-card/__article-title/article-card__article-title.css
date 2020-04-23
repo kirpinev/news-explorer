@@ -1,0 +1,12 @@
+.article-card__article-title {
+  font: normal normal 26px/30px Roboto-Slab, Arial, sans-serif;
+  margin: 0 0 16px 0;
+  color: black;
+}
+
+@media (max-width: 1100px) {
+  .article-card__article-title {
+    margin: 0 0 11px 0;
+    font: normal normal 22px/24px Roboto-Slab, Arial, sans-serif;
+  }
+}

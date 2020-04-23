@@ -1,0 +1,17 @@
+.layout {
+  width: calc(100% - 208px);
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 767px) {
+  .layout {
+    width: calc(100% - 32px);
+  }
+}

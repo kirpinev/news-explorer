@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Игорь Кирпинев" />
+  <meta name="description" content="News Explorer - поисковик новостей по ключевым словам" />
+  <link rel="apple-touch-icon" sizes="57x57" href="<%=require('../../images/favicon/apple-icon-57x57.png')%>" />
+  <link rel="apple-touch-icon" sizes="60x60" href="<%=require('../../images/favicon/apple-icon-60x60.png')%>" />
+  <link rel="apple-touch-icon" sizes="72x72" href="<%=require('../../images/favicon/apple-icon-72x72.png')%>" />
+  <link rel="apple-touch-icon" sizes="76x76" href="<%=require('../../images/favicon/apple-icon-76x76.png')%>" />
+  <link rel="apple-touch-icon" sizes="114x114" href="<%=require('../../images/favicon/apple-icon-114x114.png')%>" />
+  <link rel="apple-touch-icon" sizes="120x120" href="<%=require('../../images/favicon/apple-icon-120x120.png')%>" />
+  <link rel="apple-touch-icon" sizes="144x144" href="<%=require('../../images/favicon/apple-icon-144x144.png')%>" />
+  <link rel="apple-touch-icon" sizes="152x152" href="<%=require('../../images/favicon/apple-icon-152x152.png')%>" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%=require('../../images/favicon/apple-icon-180x180.png')%>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="<%=require('../../images/favicon/favicon-32x32.png')%>" />
+  <link rel="icon" type="image/png" sizes="96x96" href="<%=require('../../images/favicon/favicon-96x96.png')%>" />
+  <link rel="icon" type="image/png" sizes="16x16" href="<%=require('../../images/favicon/favicon-16x16.png')%>" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>News Explorer | Главная</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__container layout">
+      <a href="./" class="header__logo header__logo_light" lang="en"
+        title="Ссылка на главную страницу с поиском">NewsExplorer</a>
+
+      <nav class="header__nav">
+        <input class="header__toggle" id="header__toggle" type="checkbox" />
+        <label class="header__label" for="header__toggle">
+          <span class="header__span"></span>
+        </label>
+
+        <div class="popup popup_type_nav-links"></div>
+        <ul class="header__nav-links header__nav-links_dark">
+          <li class="header__nav-item header__nav-item_visible header__nav-item_main">
+            <a href="./" class="header__nav-link header__nav-link_theme_light-active"
+              title="Ссылка на главную страницу с поиском, но можно расслабиться - мы уже тут">Главная</a>
+          </li>
+          <li class="header__nav-item header__nav-item_saved-articles">
+            <a href="./articles" class="header__nav-link header__nav-link_theme_light-disabled"
+              title="Ссылка на страницу с сохранёнными статьями">Сохранённые статьи</a>
+          </li>
+          <li class="header__nav-item header__nav-item_visible header__nav-item_auth">
+            <button class="button header__button header__button_light">
+              Авторизоваться
+            </button>
+          </li>
+          <li class="header__nav-item header__nav-item_login">
+            <button class="button header__button header__button_light header__button_login_light">
+              Игорь
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="search page__search">
+      <form class="form search__form" name="search">
+        <fieldset class="form__fieldset search__fieldset">
+          <legend class="form__legend search__title">
+            Что в мире творится?
+          </legend>
+
+          <label for="search" class="form__label search__label">Находите самые свежие статьи на любую тему и сохраняйте
+            в своём
+            личном кабинете.</label>
+
+          <div class="search__container">
+            <input type="text" name="search" class="form__input search__input" id="search"
+              placeholder="Введите тему новости" />
+
+            <button class="button form__button form__button_active search__button" type="submit">
+              Искать
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <div class="preloader">
+      <i class="preloader__circle"></i>
+      <h1 class="preloader__text">Идет поиск новостей...</h1>
+    </div>
+
+    <div class="not-found">
+      <img src="<%=require('../../images/not-found.svg')%>" alt="" class="not-found__image" />
+      <h1 class="not-found__title">Ничего не найдено</h1>
+      <p class="not-found__text">
+        К сожалению по вашему запросу ничего не найдено.
+      </p>
+    </div>
+
+    <section class="articles">
+      <h1 class="articles__result-title layout">Результаты поиска</h1>
+      <div class="article-list layout">
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Войдите, чтобы сохранять статьи
+              </p>
+              <button class="article-card__action-button article-card__action-button_not-added-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source">Риа</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Войдите, чтобы сохранять статьи
+              </p>
+              <button class="article-card__action-button article-card__action-button_not-added-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source text-gray">Риа</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Войдите, чтобы сохранять статьи
+              </p>
+              <button class="article-card__action-button article-card__action-button_not-added-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source text-gray">Риа</p>
+          </div>
+        </div>
+      </div>
+      <button class="articles__show-more">Показать еще</button>
+    </section>
+
+    <section class="author layout">
+      <picture>
+        <source media="(max-width: 1279px)" srcset="<%=require('../../images/igor-232w.jpg')%>" />
+        <source media="(min-width: 1280px)" srcset="<%=require('../../images/igor-464w.jpg')%>" />
+        <img src="<%=require('../../images/igor-464w.jpg')%>" alt="Фотография Игоря, который сверстал этот сайт"
+          class="author__image" title="На фото Игорь, именно он сверстал этот сайт" />
+      </picture>
+
+      <div class="author__container">
+        <h3 class="author__title">Об авторе</h3>
+        <p class="author__paragraph">
+          Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими
+          технологиями разработки владеете.
+        </p>
+        <p class="author__paragraph">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+          потенциальным заказчикам.
+        </p>
+      </div>
+    </section>
+
+    <section class="popup popup_type_reg">
+      <div class="popup__content">
+        <img src="<%=require('../../images/close.svg')%>" alt="Иконка крестика" class="popup__close" />
+
+        <form class="form" name="reg" id="reg">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Регистрация</legend>
+            <label for="registration-email" class="form__label">Email</label>
+            <input type="email" name="email" class="form__input" id="registration-email" placeholder="Введите почту"
+              required />
+            <p class="error error_type_email" id="email"></p>
+            <label for="registration-password" class="form__label">Пароль</label>
+            <input type="password" name="password" class="form__input" id="registration-password"
+              placeholder="Введите пароль" minlength="8" required />
+            <p class="error error_type_password" id="password"></p>
+            <label for="registration-name" class="form__label">Имя</label>
+            <input type="text" name="name" class="form__input" id="registration-name" placeholder="Введите свое имя"
+              minlength="2" maxlength="30" required />
+            <p class="error error_type_name" id="name"></p>
+            <p class="error error_type_reg" id="error-reg"></p>
+            <button type="submit" class="button form__button form__button_active">
+              Зарегистрироваться
+            </button>
+            <p class="form__sub-button-text">
+              или <span class="form__sub-button-link">Войти</span>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section class="popup popup_type_auth">
+      <div class="popup__content">
+        <img src="<%=require('../../images/close.svg')%>" alt="Иконка крестика" class="popup__close" />
+        <form class="form" name="auth" id="auth">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Вход</legend>
+            <label for="authorization-email" class="form__label">Email</label>
+            <input type="email" name="auth-email" class="form__input popup__input_type_reg" id="authorization-email"
+              placeholder="Введите почту" required />
+            <p class="error error_type_email" id="auth-email"></p>
+            <label for="authorization-password" class="form__label">Пароль</label>
+            <input type="password" name="auth-password" class="form__input popup__input_type_password"
+              id="authorization-password" placeholder="Введите пароль" minlength="8" required />
+            <p class="error error_type_password" id="auth-password"></p>
+            <button type="submit" class="button form__button form__button_active">
+              Войти
+            </button>
+            <p class="form__sub-button-text">
+              или
+              <span class="form__sub-button-link">Зарегистрироваться</span>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section class="popup popup_type_success">
+      <div class="popup__content">
+        <img src="<%=require('../../images/close.svg')%>" alt="Иконка крестика" class="popup__close" />
+        <div class="success">
+          <h2 class="success__title">
+            Пользователь успешно зарегистрирован!
+          </h2>
+          <p class="success__auth-link">Выполнить вход</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer layout">
+    <p class="footer__copyright" lang="en">
+      &copy;
+      <time datetime="2020">2020</time> NewsExplorer, Powered by News
+      <abbr class="abbr" title="Application Programming Interface">API</abbr>
+    </p>
+
+    <div class="footer__container">
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a href="./" class="footer__nav-link" title="Обратно на главную страницу с поиском">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://praktikum.yandex.ru/" target="_blank" class="footer__nav-link"
+              title="Онлайн платформа образования">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <a href="https://github.com/kirpinev" target="_blank" class="footer__social-link"
+          title="Github автора этого сайта">
+          <img src="<%=require('../../images/github.svg')%>" alt="Иконка Github" class="footer__social-icon" width="20"
+            height="20" />
+        </a>
+        <a href="https://www.facebook.com/kirpinevigor" target="_blank" class="footer__social-link"
+          title="Facebook автора этого сайта">
+          <img src="<%=require('../../images/facebook.svg')%>" alt="Иконка Facebook" class="footer__social-icon"
+            width="20" height="20" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

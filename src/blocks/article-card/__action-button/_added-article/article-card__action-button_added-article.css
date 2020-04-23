@@ -1,0 +1,4 @@
+.article-card__action-button_added-article::after {
+  content: url("../../../../images/bookmark-blue.svg");
+  opacity: 1;
+}

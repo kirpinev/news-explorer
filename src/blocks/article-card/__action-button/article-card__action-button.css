@@ -1,0 +1,25 @@
+@import url("_not-added-article/article-card__action-button_not-added-article.css");
+@import url("_added-article/article-card__action-button_added-article.css");
+@import url("_delete-article/article-card__action-button_delete-article.css");
+
+.article-card__action-button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: white;
+  padding: 0;
+  margin: 0 0 5px 5px;
+  z-index: 10;
+  outline: none;
+}
+
+.article-card__action-button::after {
+  position: relative;
+  top: 3px;
+}
+
+.article-card__action-button:hover::after {
+  opacity: 1;
+}

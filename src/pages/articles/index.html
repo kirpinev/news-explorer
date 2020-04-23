@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Игорь Кирпинев" />
+  <meta name="description" content="News Explorer - поисковик новостей по ключевым словам" />
+  <link rel="apple-touch-icon" sizes="57x57" href="../<%=require('../../images/favicon/apple-icon-57x57.png')%>" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../<%=require('../../images/favicon/apple-icon-60x60.png')%>" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../<%=require('../../images/favicon/apple-icon-72x72.png')%>" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../<%=require('../../images/favicon/apple-icon-76x76.png')%>" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../<%=require('../../images/favicon/apple-icon-114x114.png')%>" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../<%=require('../../images/favicon/apple-icon-120x120.png')%>" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../<%=require('../../images/favicon/apple-icon-144x144.png')%>" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../<%=require('../../images/favicon/apple-icon-152x152.png')%>" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../<%=require('../../images/favicon/apple-icon-180x180.png')%>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../<%=require('../../images/favicon/favicon-32x32.png')%>" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../<%=require('../../images/favicon/favicon-96x96.png')%>" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../<%=require('../../images/favicon/favicon-16x16.png')%>" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>News Explorer | Сохранённые статьи</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.articles.css %>" />
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__container layout">
+      <a href="../" class="header__logo header__logo_dark" lang="en"
+        title="Ссылка на главную страницу с поиском">NewsExplorer</a>
+      <nav class="header__nav">
+        <input class="header__toggle" id="header__toggle" type="checkbox" />
+        <label class="header__label header__label_dark" for="header__toggle">
+          <span class="header__span"></span>
+        </label>
+        <div class="popup popup_type_nav-links"></div>
+        <ul class="header__nav-links">
+          <li class="header__nav-item header__nav-item_visible">
+            <a href="../" class="header__nav-link header__nav-link_theme_dark-disabled"
+              title="Обратно на главную страницу с поиском">Главная</a>
+          </li>
+          <li class="header__nav-item header__nav-item_visible">
+            <a href="../articles" class="header__nav-link header__nav-link_theme_dark-active"
+              title="Ссылка на страницу с сохранёнными статьями... но мы уже и так тут">Сохранённые статьи</a>
+          </li>
+          <li class="header__nav-item">
+            <button class="button header__button header__button_dark">
+              Авторизоваться
+            </button>
+          </li>
+          <li class="header__nav-item header__nav-item_visible">
+            <button class="button header__button header__button_dark header__button_login_dark">
+              Игорь
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="details">
+      <div class="details__container layout">
+        <h2 class="details__title">Сохранённые статьи</h2>
+        <p class="details__counting-articles">
+          Игорь, у вас 5 сохранённых статей
+        </p>
+        <p class="details__keywords">
+          По ключевым словам:
+          <strong class="details__accent">Природа</strong>,
+          <strong class="details__accent">Тайга</strong> и
+          <strong class="details__accent">2 другим</strong>
+        </p>
+      </div>
+    </section>
+
+    <div class="preloader">
+      <i class="preloader__circle"></i>
+      <h1 class="preloader__text">Идет поиск новостей...</h1>
+    </div>
+
+    <div class="not-found">
+      <img src="<%=require('../../images/not-found.svg')%>" alt="" class="not-found__image" />
+      <h1 class="not-found__title">Ничего не найдено</h1>
+      <p class="not-found__text">
+        К сожалению по вашему запросу ничего не найдено.
+      </p>
+    </div>
+
+    <div class="articles articles_is-opened">
+      <div class="article-list layout">
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <p class="article-card__search-keyword">Природа</p>
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Убрать из сохранённых
+              </p>
+              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              Национальное достояние – парки
+            </h6>
+            <p class="article-card__article-text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
+              парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article-card__article-source">Дзен</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <p class="article-card__search-keyword">Природа</p>
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Убрать из сохранённых
+              </p>
+              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              Лесные огоньки: история одной фотографии
+            </h6>
+            <p class="article-card__article-text">
+              Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую
+              красоту одного из местных чудес природы.
+            </p>
+            <p class="article-card__article-source">Афиша</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <p class="article-card__search-keyword">Природа</p>
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Убрать из сохранённых
+              </p>
+              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source">Медиазона</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <p class="article-card__search-keyword">Природа</p>
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Убрать из сохранённых
+              </p>
+              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source">Риа</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <p class="article-card__search-keyword">Природа</p>
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Убрать из сохранённых
+              </p>
+              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source">Риа</p>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <p class="article-card__search-keyword">Природа</p>
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Убрать из сохранённых
+              </p>
+              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source">Риа</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <div class="article-card__article-image">
+            <p class="article-card__search-keyword">Природа</p>
+            <div class="article-card__action-container">
+              <p class="article-card__action-description">
+                Убрать из сохранённых
+              </p>
+              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+            </div>
+          </div>
+          <div class="article-card__description-container">
+            <p class="article-card__article-date">
+              <time datetime="2019-08-02">2 августа, 2019</time>
+            </p>
+            <h6 class="article-card__article-title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h6>
+            <p class="article-card__article-text">
+              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В
+              этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <p class="article-card__article-source">Риа</p>
+          </div>
+        </div>
+      </div>
+      <button class="articles__show-more">Показать еще</button>
+    </div>
+
+    <footer class="footer layout">
+      <p class="footer__copyright" lang="en">
+        &copy;
+        <time datetime="2020">2020</time> NewsExplorer, Powered by News
+        <abbr class="abbr" title="Application Programming Interface">API</abbr>
+      </p>
+
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <ul class="footer__items">
+            <li class="footer__item">
+              <a href="../" class="footer__nav-link" title="Обратно на главную страницу с поиском">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a href="https://praktikum.yandex.ru/" class="footer__nav-link" target="_blank"
+                title="Онлайн платформа образования">Яндекс.Практикум</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__social">
+          <a href="https://github.com/kirpinev" target="_blank" class="footer__social-link"
+            title="Github автора этого сайта">
+            <img src="../<%=require('../../images/github.svg')%>" alt="Иконка Github" class="footer__social-icon"
+              width="20" height="20" />
+          </a>
+          <a href="https://www.facebook.com/kirpinevigor" target="_blank" class="footer__social-link"
+            title="Facebook автора этого сайта">
+            <img src="../<%=require('../../images/facebook.svg')%>" alt="Иконка Facebook" class="footer__social-icon"
+              width="20" height="20" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
+</body>
+
+</html>

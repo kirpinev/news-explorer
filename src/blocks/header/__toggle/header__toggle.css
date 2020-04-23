@@ -1,0 +1,28 @@
+.header__toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__toggle {
+    opacity: 0;
+  }
+
+  .header__toggle:checked ~ .header__label > .header__span {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  .header__toggle:checked ~ .header__label > .header__span::after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+  .header__toggle:checked ~ .header__nav-links {
+    visibility: visible;
+    right: 0;
+    display: block;
+    position: absolute;
+  }
+
+  .header__toggle:checked ~ .popup_type_nav-links {
+    display: block;
+  }
+}

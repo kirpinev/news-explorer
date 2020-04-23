@@ -1,0 +1,11 @@
+@import url("_active/form__button_active.css");
+
+.form__button {
+  font: normal 500 18px/24px Roboto, Arial, sans-serif;
+  width: 100%;
+  height: 63px;
+  margin-top: 10px;
+  border: 0;
+  background-color: #e6e8eb;
+  color: #b6bcbf;
+}

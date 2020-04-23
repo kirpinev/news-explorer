@@ -1,0 +1,10 @@
+.header__nav-link_theme_light-active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .header__nav-link_theme_light-active {
+    border-bottom: none;
+  }
+}

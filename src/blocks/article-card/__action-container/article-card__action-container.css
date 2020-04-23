@@ -1,0 +1,7 @@
+.article-card__action-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end;
+  margin-left: auto;
+}

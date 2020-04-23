@@ -1,0 +1,22 @@
+.search__button {
+  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
+  width: 168px;
+  margin-left: -168px;
+  margin-top: 0;
+  height: 62px;
+  padding: 0;
+}
+
+@media (max-width: 1100px) {
+  .search__button {
+    margin-left: -138px;
+    height: 53px;
+  }
+}
+
+@media (max-width: 767px) {
+  .search__button {
+    margin-left: 0;
+    width: 100%;
+  }
+}

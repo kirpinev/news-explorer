@@ -1,0 +1,15 @@
+.article-card__article-link {
+  text-decoration: none;
+  display: block;
+  border-radius: 13px;
+  transition: all 0.2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.article-card__article-link:hover {
+  box-shadow: 0 0 58px rgba(8, 29, 45, 0.1);
+}

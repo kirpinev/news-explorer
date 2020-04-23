@@ -1,0 +1,31 @@
+@import url("__button/search__button.css");
+@import url("__container/search__container.css");
+@import url("__fieldset/search__fieldset.css");
+@import url("__input/search__input.css");
+@import url("__label/search__label.css");
+@import url("__title/search__title.css");
+@import url("__form/search__form.css");
+
+.search {
+  padding-top: 158px;
+  padding-bottom: 81px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../images/search-image.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 1100px) {
+  .search {
+    padding-top: 116px;
+    padding-bottom: 49px;
+  }
+}
+
+@media (max-width: 320px) {
+  .search {
+    padding-top: 109px;
+    padding-bottom: 34px;
+    background-image: url("../../images/search-image-mobile.jpg");
+  }
+}

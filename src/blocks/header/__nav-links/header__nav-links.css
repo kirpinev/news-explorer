@@ -1,0 +1,43 @@
+@import url("_dark/header__nav-links_dark.css");
+
+.header__nav-links {
+  font: normal 500 18px/24px Roboto, Arial, sans-serif;
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .header__nav-links {
+    font: normal 500 16px/24px Roboto, Arial, sans-serif;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__nav-links {
+    font: normal 500 18px/24px Roboto, Arial, sans-serif;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 56px;
+    right: -100%;
+    width: 100%;
+    margin: -56px 0 0 0;
+    padding: 87px 0 31px 0;
+    text-align: left;
+    background-color: white;
+    transition-duration: .2s;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    z-index: 11;
+  }
+}
+
+
+
+
+
+
+

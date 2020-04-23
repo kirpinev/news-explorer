@@ -1,0 +1,9 @@
+.article-card__action-description.article-card__action-description_is-opened {
+  display: block;
+}
+
+@media (max-width: 1173px) {
+  .article-card__action-description.article-card__action-description_is-opened {
+    display: none;
+  }
+}

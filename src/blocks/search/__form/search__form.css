@@ -1,0 +1,9 @@
+.search__form {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .search__form {
+    width: calc(100% - 32px);
+  }
+}

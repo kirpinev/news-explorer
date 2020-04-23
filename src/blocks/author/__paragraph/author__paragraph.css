@@ -1,0 +1,23 @@
+.author__paragraph {
+  font: normal normal 18px/24px Roboto, Arial, sans-serif;
+  color: #1a1b22;
+  margin: 0 0 24px 0;
+}
+
+.author__paragraph:last-child {
+  margin: 0;
+}
+
+@media (max-width: 1279px) {
+    .author__paragraph {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+  .author__paragraph {
+    margin-bottom: 22px;
+  }
+}
+
+

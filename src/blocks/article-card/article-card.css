@@ -1,0 +1,20 @@
+@import url("__action-button/article-card__action-button.css");
+@import url("__action-container/article-card__action-container.css");
+@import url("__action-description/article-card__action-description.css");
+@import url("__article-date/article-card__article-date.css");
+@import url("__article-image/article-card__article-image.css");
+@import url("__article-link/article-card__article-link.css");
+@import url("__article-source/article-card__article-source.css");
+@import url("__article-text/article-card__article-text.css");
+@import url("__article-title/article-card__article-title.css");
+@import url("__description-container/article-card__description-container.css");
+@import url("__search-keyword/article-card__search-keyword.css");
+
+.article-card {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+

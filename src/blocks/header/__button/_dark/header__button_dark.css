@@ -1,0 +1,9 @@
+.header__button_dark {
+  color: #1a1b22;
+  border: 1px solid #d1d2d6;
+}
+
+.header__button_dark:hover {
+  color: #1a1b22;
+  border: 1px solid #1a1b22;
+}

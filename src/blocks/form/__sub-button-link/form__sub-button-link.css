@@ -1,0 +1,9 @@
+.form__sub-button-link {
+  color: #2f71e5;
+  font: normal 900 14px/17px Inter, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.form__sub-button-link:hover {
+  opacity: .5;
+}
