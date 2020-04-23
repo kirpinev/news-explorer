@@ -24,7 +24,7 @@ https://kirpinev.github.io/news-explorer/
 Скопируйте проект на компьютер:
 
 ```
-git clone https://github.com/kirpinev/test.git
+git clone https://github.com/kirpinev/news-explorer.git
 ```
 
 Установите зависимости:
