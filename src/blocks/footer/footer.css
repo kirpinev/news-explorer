@@ -7,6 +7,7 @@
 @import url("./__container/footer__container.css");
 @import url("./__items/footer__items.css");
 @import url("./__item/footer__item.css");
+@import url("./__abbr/footer__abbr.css");
 
 .footer {
   box-sizing: border-box;
