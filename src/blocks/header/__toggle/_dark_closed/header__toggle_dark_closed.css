@@ -1,0 +1,3 @@
+.header__toggle_dark_closed::after {
+  content: url('../../../../images/menu-closed-dark.svg');
+}

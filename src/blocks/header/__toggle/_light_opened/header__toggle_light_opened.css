@@ -1,0 +1,3 @@
+.header__toggle.header__toggle_light_opened::after {
+  content: url('../../../../images/menu-opened-light.svg');
+}

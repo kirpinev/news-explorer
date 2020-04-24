@@ -5,3 +5,9 @@
   align-items: baseline;
   z-index: 50;
 }
+
+@media (max-width: 767px) {
+  .header__container {
+    align-items: center;
+  }
+}
