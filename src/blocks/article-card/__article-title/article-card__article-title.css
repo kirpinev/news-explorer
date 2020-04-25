@@ -1,5 +1,5 @@
 .article-card__article-title {
-  font: normal normal 26px/30px Roboto-Slab, Arial, sans-serif;
+  font: normal 400 26px/30px Roboto-Slab, Arial, sans-serif;
   margin: 0 0 16px 0;
   color: black;
   display: -webkit-box;
@@ -11,6 +11,6 @@
 @media (max-width: 1100px) {
   .article-card__article-title {
     margin: 0 0 7px 0;
-    font: normal normal 22px/24px Roboto-Slab, Arial, sans-serif;
+    font: normal 400 22px/24px Roboto-Slab, Arial, sans-serif;
   }
 }

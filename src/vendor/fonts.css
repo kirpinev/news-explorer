@@ -34,6 +34,13 @@
 }
 
 @font-face {
+  font-family: "Roboto-Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/robotoslab-bold.woff") format("woff");
+}
+
+@font-face {
   font-family: "Sans-Pro";
   font-style: normal;
   font-weight: 400;

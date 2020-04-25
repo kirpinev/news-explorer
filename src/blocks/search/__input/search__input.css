@@ -3,14 +3,14 @@
   height: 62px;
   border: none;
   border-radius: 39px;
-  font: normal normal 16px/22px Roboto, Arial, sans-serif;
+  font: normal 400 16px/22px Roboto, Arial, sans-serif;
   color: #1a1b22;
   box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
   padding-left: 24px;
 }
 
 .search__input::placeholder {
-  font: normal normal 16px/22px Roboto, Arial, sans-serif;
+  font: normal 400 16px/22px Roboto, Arial, sans-serif;
 }
 
 .search__input:focus {

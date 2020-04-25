@@ -1,7 +1,7 @@
 .success__auth-link {
   color: #2f71e5;
   text-decoration: none;
-  font: normal normal 18px/22px Inter, Arial, sans-serif;
+  font: normal 400 18px/22px Inter, Arial, sans-serif;
   margin: 13px 0;
   cursor: pointer;
 }

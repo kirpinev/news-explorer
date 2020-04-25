@@ -2,7 +2,7 @@
 @import url("./_dark/header__logo_dark.css");
 
 .header__logo {
-  font: normal bold 20px/24px Roboto-Slab, Arial, sans-serif;
+  font: normal 700 20px/24px Roboto-Slab, Arial, sans-serif;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
