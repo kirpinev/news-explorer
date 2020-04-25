@@ -5,8 +5,9 @@
   border-radius: 39px;
   font: normal 400 16px/22px Roboto, Arial, sans-serif;
   color: #1a1b22;
-  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
+  box-shadow: 0 5px 15px rgba(14, 26, 57, .2);
   padding-left: 24px;
+
 }
 
 .search__input::placeholder {
@@ -14,7 +15,7 @@
 }
 
 .search__input:focus {
-  border: none;
+  box-shadow: 0 0 15px rgba(47, 113, 229, .7);
 }
 
 @media (max-width: 1100px) {

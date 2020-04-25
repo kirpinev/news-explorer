@@ -1,4 +1,4 @@
-@import url("_active/form__button_active.css");
+@import url('_active/form__button_active.css');
 
 .form__button {
   font: normal 500 18px/24px Roboto, Arial, sans-serif;
@@ -8,4 +8,8 @@
   border: 0;
   background-color: #e6e8eb;
   color: #b6bcbf;
+}
+
+.form__button:focus {
+  box-shadow: 0 0 15px rgba(47, 113, 229, .7);
 }
