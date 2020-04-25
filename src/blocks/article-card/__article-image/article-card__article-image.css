@@ -1,14 +1,11 @@
 .article-card__article-image {
-  background-image: url(../../../images/back-test.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   box-sizing: border-box;
-  padding: 6%;
-  display: flex;
-  align-items: flex-start;
+  display: block;
+  width: 100%;
 }
 
 .article-card__article-image::before {
