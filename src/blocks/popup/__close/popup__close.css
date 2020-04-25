@@ -1,9 +1,17 @@
 .popup__close {
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  border: none;
   width: 37px;
   position: absolute;
   top: -43px;
   right: -44px;
   cursor: pointer;
+}
+
+.popup__close::after {
+  content: url('../../../images/close.svg');
 }
 
 @media screen and (max-width: 768px) {
