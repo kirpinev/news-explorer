@@ -8,6 +8,8 @@
 @import url("./__items/footer__items.css");
 @import url("./__item/footer__item.css");
 @import url("./__abbr/footer__abbr.css");
+@import url("./__social-items/footer__social-items.css");
+@import url("./__social-item/footer__social-item.css");
 
 .footer {
   box-sizing: border-box;
@@ -25,7 +27,7 @@
 @media (max-width: 767px) {
   .footer {
     flex-wrap: wrap;
-    padding: 23px 0;
+    padding: 25px 0;
     align-items: flex-start;
   }
 }

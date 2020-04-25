@@ -1,12 +1,4 @@
 .footer__social-link {
-  margin-right: 32px;
-  transition: opacity .2s linear;
+  text-decoration: none;
 }
 
-.footer__social-link:last-child {
-  margin-right: 0;
-}
-
-.footer__social-link:hover {
-  opacity: .7;
-}

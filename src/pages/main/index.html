@@ -278,21 +278,24 @@
       </nav>
 
       <div class="footer__social">
-        <a href="https://github.com/kirpinev" target="_blank" class="footer__social-link"
-          title="Github автора этого сайта">
-          <img src="<%=require('../../images/github.svg')%>" alt="Иконка Github" class="footer__social-icon" width="21"
-            height="21" />
-        </a>
-        <a href="https://www.facebook.com/kirpinevigor" target="_blank" class="footer__social-link"
-          title="Facebook автора этого сайта">
-          <picture>
-            <source media="(max-width: 767px)" srcset="<%=require('../../images/facebook-square.svg')%>" />
-            <source media="(max-width: 1279px)" srcset="<%=require('../../images/facebook-round.svg')%>" />
-            <source media="(max-width: 1440px)" srcset="<%=require('../../images/facebook-square.svg')%>" />
-            <img src="<%=require('../../images/facebook-square.svg')%>" alt="Иконка Facebook" class="footer__social-icon"
-                 width="20" height="20" />
-          </picture>
-        </a>
+        <ul class="footer__social-items">
+          <li class="footer__social-item">
+            <a href="https://github.com/kirpinev" target="_blank" class="footer__social-link" title="Github автора этого сайта">
+              <img src="<%=require('../../images/github.svg')%>" alt="Иконка Github" class="footer__social-icon" width="21" height="21" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://www.facebook.com/kirpinevigor" target="_blank" class="footer__social-link" title="Facebook автора этого сайта">
+              <picture>
+                <source media="(max-width: 767px)" srcset="<%=require('../../images/facebook-square.svg')%>" />
+                <source media="(max-width: 1279px)" srcset="<%=require('../../images/facebook-round.svg')%>" />
+                <source media="(max-width: 1440px)" srcset="<%=require('../../images/facebook-square.svg')%>" />
+                <img src="<%=require('../../images/facebook-square.svg')%>" alt="Иконка Facebook" class="footer__social-icon"
+                     width="20" height="20" />
+              </picture>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
