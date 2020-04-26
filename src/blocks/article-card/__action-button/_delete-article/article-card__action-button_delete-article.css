@@ -1,4 +1,0 @@
-.article-card__action-button_delete-article::after {
-  content: url("../../../../images/delete-icon.svg");
-  opacity: .5;
-}

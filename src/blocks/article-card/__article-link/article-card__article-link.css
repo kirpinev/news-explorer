@@ -1,9 +1,0 @@
-.article-card__article-link {
-  text-decoration: none;
-  border-radius: 15px;
-  transition: all 0.2s linear;
-}
-
-.article-card__article-link:hover {
-  box-shadow: 0 0 58px rgba(8, 29, 45, 0.1);
-}

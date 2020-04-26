@@ -11,4 +11,4 @@
 @import url("../../blocks/not-found/not-found.css");
 @import url("../../blocks/articles/articles.css");
 @import url("../../blocks/article-list/article-list.css");
-@import url("../../blocks/article-card/article-card.css");
+@import url('../../blocks/article/article.css');
