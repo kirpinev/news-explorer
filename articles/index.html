@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href=".././images/favicon-16x16.png" />
   <meta name="theme-color" content="#ffffff" />
   <title>News Explorer | Сохранённые статьи</title>
-  <link rel="stylesheet" href="../articles/articles.3ee15624c500eb53617b.css" />
+  <link rel="stylesheet" href="../articles/articles.3264c8732b2040b094fb.css" />
 </head>
 
 <body class="page">
@@ -45,12 +45,12 @@
               title="Ссылка на страницу с сохранёнными статьями... но мы уже и так тут">Сохранённые статьи</a>
           </li>
           <li class="header__nav-item">
-            <button class="button header__button header__button_dark">
+            <button type="button" class="button header__button header__button_dark">
               Авторизоваться
             </button>
           </li>
           <li class="header__nav-item header__nav-item_visible">
-            <button class="button header__button header__button_dark header__button_login_dark">
+            <button type="button" class="button header__button header__button_dark header__button_login_dark">
               Игорь
             </button>
           </li>
@@ -62,7 +62,7 @@
   <main class="main">
     <section class="details">
       <div class="details__container layout">
-        <h2 class="details__title">Сохранённые статьи</h2>
+        <h1 class="details__title">Сохранённые статьи</h1>
         <p class="details__counting-articles">
           Игорь, у вас 5 сохранённых статей
         </p>
@@ -75,36 +75,34 @@
       </div>
     </section>
 
-    <div class="preloader">
+    <section class="preloader">
       <i class="preloader__circle"></i>
-      <h1 class="preloader__text">Идет поиск новостей...</h1>
-    </div>
+      <h2 class="preloader__text">Идет поиск новостей...</h2>
+    </section>
 
-    <div class="not-found">
+    <section class="not-found">
       <img src="./images/not-found.svg" alt="" class="not-found__image" />
-      <h1 class="not-found__title">Ничего не найдено</h1>
+      <h2 class="not-found__title">Ничего не найдено</h2>
       <p class="not-found__text">
         К сожалению по вашему запросу ничего не найдено.
       </p>
-    </div>
+    </section>
 
-    <div class="articles articles_is-opened">
+    <section class="articles articles_is-opened">
       <div class="article-list layout">
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <p class="article-card__search-keyword">Природа</p>
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Убрать из сохранённых
               </p>
-              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_delete-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               Национальное достояние – парки
             </h6>
@@ -117,20 +115,18 @@
         </div>
 
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <p class="article-card__search-keyword">Природа</p>
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Убрать из сохранённых
               </p>
-              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_delete-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               Лесные огоньки: история одной фотографии
             </h6>
@@ -143,20 +139,18 @@
         </div>
 
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <p class="article-card__search-keyword">Природа</p>
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Убрать из сохранённых
               </p>
-              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_delete-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -169,20 +163,18 @@
         </div>
 
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <p class="article-card__search-keyword">Природа</p>
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Убрать из сохранённых
               </p>
-              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_delete-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -195,20 +187,18 @@
         </div>
 
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <p class="article-card__search-keyword">Природа</p>
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Убрать из сохранённых
               </p>
-              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_delete-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -221,20 +211,18 @@
         </div>
 
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <p class="article-card__search-keyword">Природа</p>
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Убрать из сохранённых
               </p>
-              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_delete-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -246,20 +234,18 @@
           </div>
         </div>
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <p class="article-card__search-keyword">Природа</p>
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Убрать из сохранённых
               </p>
-              <button class="article-card__action-button article-card__action-button_delete-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_delete-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -271,14 +257,14 @@
           </div>
         </div>
       </div>
-      <button class="articles__show-more">Показать еще</button>
-    </div>
+      <button type="button" class="articles__show-more">Показать еще</button>
+    </section>
 
     <footer class="footer layout">
       <p class="footer__copyright" lang="en">
         &copy;
         <time datetime="2020">2020</time> NewsExplorer, Powered by News
-        <abbr class="abbr" title="Application Programming Interface">API</abbr>
+        <abbr class="footer__abbr" title="Application Programming Interface">API</abbr>
       </p>
 
       <div class="footer__container">
@@ -296,14 +282,19 @@
 
         <div class="footer__social">
           <a href="https://github.com/kirpinev" target="_blank" class="footer__social-link"
-            title="Github автора этого сайта">
-            <img src=".././images/github.svg" alt="Иконка Github" class="footer__social-icon"
-              width="20" height="20" />
+             title="Github автора этого сайта">
+            <img src="./images/github.svg" alt="Иконка Github" class="footer__social-icon" width="21"
+                 height="21" />
           </a>
           <a href="https://www.facebook.com/kirpinevigor" target="_blank" class="footer__social-link"
-            title="Facebook автора этого сайта">
-            <img src=".././images/facebook.svg" alt="Иконка Facebook" class="footer__social-icon"
-              width="20" height="20" />
+             title="Facebook автора этого сайта">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/facebook-square.svg" />
+              <source media="(max-width: 1279px)" srcset="./images/facebook-round.svg" />
+              <source media="(max-width: 1440px)" srcset="./images/facebook-square.svg" />
+              <img src="./images/facebook-square.svg" alt="Иконка Facebook" class="footer__social-icon"
+                   width="20" height="20" />
+            </picture>
           </a>
         </div>
       </div>

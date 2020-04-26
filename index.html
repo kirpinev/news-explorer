@@ -21,13 +21,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
   <meta name="theme-color" content="#ffffff" />
   <title>News Explorer | Главная</title>
-  <link rel="stylesheet" href="main/main.c0f335e379be2ea3e316.css" />
+  <link rel="stylesheet" href="main/main.3ca9db1b91e3a2290131.css" />
 </head>
 
 <body class="page">
-  <header class="header">
+  <header class="header" id="main">
     <div class="header__container layout">
-      <a href="./" class="header__logo header__logo_light" lang="en"
+      <a href="#main" class="header__logo header__logo_light" lang="en"
         title="Ссылка на главную страницу с поиском">NewsExplorer</a>
 
       <nav class="header__nav">
@@ -39,7 +39,7 @@
         <div class="popup popup_type_nav-links"></div>
         <ul class="header__nav-links header__nav-links_dark">
           <li class="header__nav-item header__nav-item_visible header__nav-item_main">
-            <a href="./" class="header__nav-link header__nav-link_theme_light-active"
+            <a href="#main" class="header__nav-link header__nav-link_theme_light-active"
               title="Ссылка на главную страницу с поиском, но можно расслабиться - мы уже тут">Главная</a>
           </li>
           <li class="header__nav-item header__nav-item_saved-articles">
@@ -47,12 +47,12 @@
               title="Ссылка на страницу с сохранёнными статьями">Сохранённые статьи</a>
           </li>
           <li class="header__nav-item header__nav-item_visible header__nav-item_auth">
-            <button class="button header__button header__button_light">
+            <button type="button" class="button header__button header__button_light">
               Авторизоваться
             </button>
           </li>
           <li class="header__nav-item header__nav-item_login">
-            <button class="button header__button header__button_light header__button_login_light">
+            <button type="button" class="button header__button header__button_light header__button_login_light">
               Игорь
             </button>
           </li>
@@ -85,36 +85,34 @@
       </form>
     </section>
 
-    <div class="preloader">
+    <section class="preloader">
       <i class="preloader__circle"></i>
-      <h1 class="preloader__text">Идет поиск новостей...</h1>
-    </div>
+      <h2 class="preloader__text">Идет поиск новостей...</h2>
+    </section>
 
-    <div class="not-found">
+    <section class="not-found">
       <img src="./images/not-found.svg" alt="" class="not-found__image" />
-      <h1 class="not-found__title">Ничего не найдено</h1>
+      <h2 class="not-found__title">Ничего не найдено</h2>
       <p class="not-found__text">
         К сожалению по вашему запросу ничего не найдено.
       </p>
-    </div>
+    </section>
 
     <section class="articles">
       <h1 class="articles__result-title layout">Результаты поиска</h1>
       <div class="article-list layout">
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Войдите, чтобы сохранять статьи
               </p>
-              <button class="article-card__action-button article-card__action-button_not-added-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_not-added-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+              <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -127,19 +125,17 @@
         </div>
 
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Войдите, чтобы сохранять статьи
               </p>
-              <button class="article-card__action-button article-card__action-button_not-added-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_not-added-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -152,19 +148,17 @@
         </div>
 
         <div class="article-card">
-          <a href="#" class="article-card__article-link" target="_blank"></a>
+          <a href="https://coronavirus.medium.com/" class="article-card__article-link" target="_blank"></a>
           <div class="article-card__article-image">
             <div class="article-card__action-container">
               <p class="article-card__action-description">
                 Войдите, чтобы сохранять статьи
               </p>
-              <button class="article-card__action-button article-card__action-button_not-added-article"></button>
+              <button type="button" class="article-card__action-button article-card__action-button_not-added-article"></button>
             </div>
           </div>
           <div class="article-card__description-container">
-            <p class="article-card__article-date">
-              <time datetime="2019-08-02">2 августа, 2019</time>
-            </p>
+            <time class="article-card__article-date" datetime="2019-08-02">2 августа, 2019</time>
             <h6 class="article-card__article-title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
@@ -176,14 +170,15 @@
           </div>
         </div>
       </div>
-      <button class="articles__show-more">Показать еще</button>
+      <button type="button" class="articles__show-more">Показать еще</button>
     </section>
 
     <section class="author layout">
       <picture>
-        <source media="(max-width: 1279px)" srcset="./images/igor-232w.jpg" />
-        <source media="(min-width: 1280px)" srcset="./images/igor-464w.jpg" />
-        <img src="./images/igor-464w.jpg" alt="Фотография Игоря, который сверстал этот сайт"
+        <source media="(max-width: 767px)" srcset="./images/author-320w.jpg" />
+        <source media="(max-width: 1279px)" srcset="./images/author-1279w.jpg" />
+        <source media="(max-width: 1440px)" srcset="./images/author.jpg" />
+        <img src="./images/author.jpg" alt="Фотография Игоря, который сверстал этот сайт"
           class="author__image" title="На фото Игорь, именно он сверстал этот сайт" />
       </picture>
 
@@ -274,14 +269,14 @@
     <p class="footer__copyright" lang="en">
       &copy;
       <time datetime="2020">2020</time> NewsExplorer, Powered by News
-      <abbr class="abbr" title="Application Programming Interface">API</abbr>
+      <abbr class="footer__abbr" title="Application Programming Interface">API</abbr>
     </p>
 
     <div class="footer__container">
       <nav class="footer__nav">
         <ul class="footer__items">
           <li class="footer__item">
-            <a href="./" class="footer__nav-link" title="Обратно на главную страницу с поиском">Главная</a>
+            <a href="#main" class="footer__nav-link" title="Обратно на главную страницу с поиском">Главная</a>
           </li>
           <li class="footer__item">
             <a href="https://praktikum.yandex.ru/" target="_blank" class="footer__nav-link"
@@ -293,13 +288,18 @@
       <div class="footer__social">
         <a href="https://github.com/kirpinev" target="_blank" class="footer__social-link"
           title="Github автора этого сайта">
-          <img src="./images/github.svg" alt="Иконка Github" class="footer__social-icon" width="20"
-            height="20" />
+          <img src="./images/github.svg" alt="Иконка Github" class="footer__social-icon" width="21"
+            height="21" />
         </a>
         <a href="https://www.facebook.com/kirpinevigor" target="_blank" class="footer__social-link"
           title="Facebook автора этого сайта">
-          <img src="./images/facebook.svg" alt="Иконка Facebook" class="footer__social-icon"
-            width="20" height="20" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="./images/facebook-square.svg" />
+            <source media="(max-width: 1279px)" srcset="./images/facebook-round.svg" />
+            <source media="(max-width: 1440px)" srcset="./images/facebook-square.svg" />
+            <img src="./images/facebook-square.svg" alt="Иконка Facebook" class="footer__social-icon"
+                 width="20" height="20" />
+          </picture>
         </a>
       </div>
     </div>
