@@ -9,14 +9,13 @@
   border-radius: 7px;
   cursor: pointer;
   background-color: white;
-  padding: 0;
+  padding: 13px;
   margin: 0 0 5px 5px;
   outline: none;
 }
 
 .article__action-button::after {
   position: relative;
-  top: 3px;
 }
 
 .article__action-button:hover::after {
