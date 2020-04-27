@@ -16,8 +16,7 @@
 
 @media (max-width: 767px) {
   .header__logo {
-    font-size: 16px;
-    line-height: 24px;
+    font: normal 700 16px/24px Roboto-Slab, Arial, sans-serif;
     z-index: 101;
   }
 }
