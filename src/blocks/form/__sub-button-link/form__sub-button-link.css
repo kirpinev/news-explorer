@@ -2,8 +2,18 @@
   color: #2f71e5;
   font: normal 900 14px/17px Inter, Arial, sans-serif;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  transition: all .2s linear;
 }
 
 .form__sub-button-link:hover {
-  opacity: .5;
+  opacity: 0.5;
+}
+
+.form__sub-button-link:focus {
+  opacity: 0.5;
 }
