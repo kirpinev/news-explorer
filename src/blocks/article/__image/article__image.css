@@ -9,7 +9,7 @@
 }
 
 .article__image::before {
-  content: "";
+  content: '';
   display: block;
   padding-top: 63%;
 }

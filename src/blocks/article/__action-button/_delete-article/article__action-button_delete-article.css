@@ -1,4 +1,4 @@
 .article__action-button_delete-article::after {
-  content: url("../../../../images/delete-icon.svg");
+  content: url('../../../../images/delete-icon.svg');
   opacity: .5;
 }

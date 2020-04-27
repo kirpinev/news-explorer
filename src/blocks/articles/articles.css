@@ -1,6 +1,6 @@
-@import url("__result-title/articles__result-title.css");
-@import url("_is-opened/articles_is-opened.css");
-@import url("__show-more/articles__show-more.css");
+@import url('__result-title/articles__result-title.css');
+@import url('_is-opened/articles_is-opened.css');
+@import url('__show-more/articles__show-more.css');
 
 .articles {
   display: none;

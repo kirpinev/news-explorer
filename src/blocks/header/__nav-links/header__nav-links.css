@@ -29,7 +29,7 @@
     padding: 87px 0 31px 0;
     text-align: left;
     background-color: white;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     z-index: 11;

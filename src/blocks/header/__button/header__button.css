@@ -1,7 +1,7 @@
-@import url("_light/header__button_light.css");
-@import url("_dark/header__button_dark.css");
-@import url("_login-light/header__button_login-light.css");
-@import url("_login-dark/header__button_login-dark.css");
+@import url('_light/header__button_light.css');
+@import url('_dark/header__button_dark.css');
+@import url('_login-light/header__button_login-light.css');
+@import url('_login-dark/header__button_login-dark.css');
 
 .header__button {
   padding: 10px 17px;

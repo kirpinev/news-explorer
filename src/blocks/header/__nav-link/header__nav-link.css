@@ -1,7 +1,7 @@
-@import url("_theme/_light-active/header__nav-link_theme_light-active.css");
-@import url("_theme/_light-disabled/header__nav-link_theme_light-disabled.css");
-@import url("_theme/_dark-active/header__nav-link_theme_dark-active.css");
-@import url("_theme/_dark-disabled/header__nav-link_theme_dark-disabled.css");
+@import url('_theme/_light-active/header__nav-link_theme_light-active.css');
+@import url('_theme/_light-disabled/header__nav-link_theme_light-disabled.css');
+@import url('_theme/_dark-active/header__nav-link_theme_dark-active.css');
+@import url('_theme/_dark-disabled/header__nav-link_theme_dark-disabled.css');
 
 .header__nav-link {
   padding-bottom: 22px;

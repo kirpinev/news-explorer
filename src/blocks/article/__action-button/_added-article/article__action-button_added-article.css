@@ -1,4 +1,4 @@
 .article__action-button_added-article::after {
-  content: url("../../../../images/bookmark-blue.svg");
+  content: url('../../../../images/bookmark-blue.svg');
   opacity: 1;
 }

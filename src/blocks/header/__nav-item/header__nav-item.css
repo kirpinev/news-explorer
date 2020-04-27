@@ -1,4 +1,4 @@
-@import url("_visible/header__nav-item_visible.css");
+@import url('_visible/header__nav-item_visible.css');
 
 .header__nav-item {
   display: none;
@@ -21,7 +21,6 @@
     padding: 0 16px;
     margin: 0 0 35px 0;
   }
-
 
   .header__nav-item:nth-of-type(3),
   .header__nav-item:nth-of-type(4) {

@@ -1,11 +1,11 @@
-@import url("./__nav/header__nav.css");
-@import url("./__nav-links/header__nav-links.css");
-@import url("./__logo/header__logo.css");
-@import url("./__nav-link/header__nav-link.css");
-@import url("./__button/header__button.css");
-@import url("./__toggle/header__toggle.css");
-@import url("./__nav-item/header__nav-item.css");
-@import url("./__container/header__container.css");
+@import url('./__nav/header__nav.css');
+@import url('./__nav-links/header__nav-links.css');
+@import url('./__logo/header__logo.css');
+@import url('./__nav-link/header__nav-link.css');
+@import url('./__button/header__button.css');
+@import url('./__toggle/header__toggle.css');
+@import url('./__nav-item/header__nav-item.css');
+@import url('./__container/header__container.css');
 
 .header {
   border-bottom: 1px solid #c4c4c4;

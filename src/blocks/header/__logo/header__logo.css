@@ -1,5 +1,5 @@
-@import url("./_light/header__logo_light.css");
-@import url("./_dark/header__logo_dark.css");
+@import url('./_light/header__logo_light.css');
+@import url('./_dark/header__logo_dark.css');
 
 .header__logo {
   font: normal 700 20px/24px Roboto-Slab, Arial, sans-serif;

@@ -1,6 +1,6 @@
-@import url("__circle/preloader__circle.css");
-@import url("__text/preloader__text.css");
-@import url("_is-opened/preloader__is-opened.css");
+@import url('__circle/preloader__circle.css');
+@import url('__text/preloader__text.css');
+@import url('_is-opened/preloader__is-opened.css');
 
 .preloader {
   display: none;
