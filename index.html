@@ -21,31 +21,30 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
   <meta name="theme-color" content="#ffffff" />
   <title>News Explorer | Главная</title>
-  <link rel="stylesheet" href="main/main.39742898a8d9337a4869.css" />
+  <link rel="stylesheet" href="main/main.041b93fc65737acb556f.css" />
 </head>
 
 <body class="page">
-<header class="header" id="main">
+<header class="header">
   <div class="header__container layout">
-    <a href="#main" class="header__logo header__logo_light" lang="en" title="Ссылка на главную страницу с поиском">NewsExplorer</a>
+    <a href="./index.html" class="header__logo header__logo_light" lang="en" title="Ссылка на главную страницу с поиском">NewsExplorer</a>
     <button type="button" class="header__toggle header__toggle_light_closed"></button>
     <nav class="header__nav">
       <div class="popup popup_type_nav-links"></div>
       <ul class="header__nav-links header__nav-links_dark">
-        <li class="header__nav-item header__nav-item_visible header__nav-item_main">
-          <a href="#main" class="header__nav-link header__nav-link_theme_light-active" title="Ссылка на главную страницу с поиском, но можно расслабиться - мы уже тут">Главная</a>
+        <li class="header__nav-item header__nav-item_main header__nav-item_visible">
+          <a href="./index.html" class="header__nav-link header__nav-link_theme_light-active" title="Ссылка на главную страницу с поиском, но можно расслабиться - мы уже тут">Главная</a>
         </li>
-        <li class="header__nav-item header__nav-item_saved-articles">
-          <a href="./articles/index.html" class="header__nav-link header__nav-link_theme_light-disabled" title="Ссылка на страницу с сохранёнными статьями">Сохранённые статьи</a>
+        <li class="header__nav-item header__nav-item_articles">
+          <a href="./articles" class="header__nav-link header__nav-link_theme_light-disabled" title="Ссылка на страницу с сохранёнными статьями">Сохранённые статьи</a>
         </li>
-        <li class="header__nav-item header__nav-item_visible header__nav-item_auth">
-          <button type="button" class="button header__button header__button_light">
+        <li class="header__nav-item header__nav-item_auth">
+          <button type="button" class="button header__button header__button_light header__button_type_auth">
             Авторизоваться
           </button>
         </li>
         <li class="header__nav-item header__nav-item_login">
-          <button type="button" class="button header__button header__button_light header__button_login_light">
-            Игорь
+          <button type="button" class="button header__button header__button_login header__button_light header__button_login_light">
           </button>
         </li>
       </ul>
@@ -179,27 +178,27 @@
     </div>
   </section>
 
-  <section class="popup popup_type_reg">
+  <section class="popup popup_main popup_type_reg">
     <div class="popup__content">
       <button type="button" class="popup__close"></button>
-      <form class="form" name="reg" id="reg">
-        <fieldset class="form__fieldset">
+      <form class="form form_reg" name="reg" id="reg" novalidate>
+        <fieldset class="form__fieldset" name="fieldset">
           <legend class="form__legend">Регистрация</legend>
           <label for="registration-email" class="form__label">Email</label>
-          <input type="email" name="email" class="form__input" id="registration-email" placeholder="Введите почту" required />
-          <p class="error error_type_email" id="email"></p>
+          <input type="email" name="regEmail" class="form__input form__input_email popup__input_type_reg" id="registration-email" pattern="^\w+([\.\-\]?\w+)@\w+([\.\-]?\w+)*(\.\w{2,8})$" placeholder="Введите почту" required />
+          <p class="error error_type_email" id="regEmail"></p>
           <label for="registration-password" class="form__label">Пароль</label>
-          <input type="password" name="password" class="form__input" id="registration-password" placeholder="Введите пароль" minlength="8" required />
+          <input type="password" name="password" class="form__input form__input_password" id="registration-password" placeholder="Введите пароль" minlength="8" required />
           <p class="error error_type_password" id="password"></p>
           <label for="registration-name" class="form__label">Имя</label>
-          <input type="text" name="name" class="form__input" id="registration-name" placeholder="Введите свое имя" minlength="2" maxlength="30" required />
+          <input type="text" name="name" class="form__input form__input_name" id="registration-name" placeholder="Введите свое имя" minlength="2" maxlength="30" required />
           <p class="error error_type_name" id="name"></p>
           <p class="error error_type_reg" id="error-reg"></p>
-          <button type="submit" class="button form__button">
+          <button type="submit" class="button form__button" disabled>
             Зарегистрироваться
           </button>
           <p class="form__sub-button-text">
-            или <button type="button" class="form__sub-button-link">Войти</button>
+            или <button type="button" class="form__sub-button-link form__sub-button-link_auth">Войти</button>
           </p>
         </fieldset>
       </form>
@@ -209,21 +208,22 @@
   <section class="popup popup_type_auth">
     <div class="popup__content">
       <button type="button" class="popup__close"></button>
-      <form class="form" name="auth" id="auth">
-        <fieldset class="form__fieldset">
+      <form class="form form_auth" name="auth" id="auth" novalidate>
+        <fieldset class="form__fieldset" name="fieldset">
           <legend class="form__legend">Вход</legend>
           <label for="authorization-email" class="form__label">Email</label>
-          <input type="email" name="auth-email" class="form__input popup__input_type_reg" id="authorization-email" placeholder="Введите почту" required />
-          <p class="error error_type_email" id="auth-email"></p>
+          <input type="email" name="authEmail" class="form__input form__input_email popup__input_type_auth" id="authorization-email" pattern="^\w+([\.\-\]?\w+)@\w+([\.\-]?\w+)*(\.\w{2,8})$" placeholder="Введите почту" required />
+          <p class="error error_type_email" id="authEmail"></p>
           <label for="authorization-password" class="form__label">Пароль</label>
-          <input type="password" name="auth-password" class="form__input popup__input_type_password" id="authorization-password" placeholder="Введите пароль" minlength="8" required />
-          <p class="error error_type_password" id="auth-password"></p>
-          <button type="submit" class="button form__button">
+          <input type="password" name="authPassword" class="form__input form__input_password popup__input_type_password" id="authorization-password" placeholder="Введите пароль" minlength="8" maxlength="30" required />
+          <p class="error error_type_password" id="authPassword"></p>
+          <p class="error error_type_auth" id="error-auth"></p>
+          <button type="submit" class="button form__button" disabled>
             Войти
           </button>
           <p class="form__sub-button-text">
             или
-            <button type="button" class="form__sub-button-link">Зарегистрироваться</button>
+            <button type="button" class="form__sub-button-link form__sub-button-link_reg">Зарегистрироваться</button>
           </p>
         </fieldset>
       </form>
@@ -254,7 +254,7 @@
     <nav class="footer__nav">
       <ul class="footer__items">
         <li class="footer__item">
-          <a href="#main" class="footer__nav-link" title="Обратно на главную страницу с поиском">Главная</a>
+          <a href="./index.html" class="footer__nav-link" title="Обратно на главную страницу с поиском">Главная</a>
         </li>
         <li class="footer__item">
           <a href="https://praktikum.yandex.ru/" target="_blank" class="footer__nav-link" title="Онлайн платформа образования">Яндекс.Практикум</a>
@@ -284,7 +284,7 @@
   </div>
 </footer>
 
-<script src="main/main.19a631517f6d367c6073.js"></script>
+<script src="main/main.9d9eb8c918263ff14f37.js"></script>
 </body>
 
 </html>
