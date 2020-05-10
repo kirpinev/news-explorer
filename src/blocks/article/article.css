@@ -15,4 +15,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  max-height: 536px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  border-radius: 15px;
+}
+
+.article:hover {
+  box-shadow: 0 0 58px rgba(8, 29, 45, 0.1);
 }

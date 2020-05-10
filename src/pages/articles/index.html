@@ -25,27 +25,26 @@
 </head>
 
 <body class="page">
-<header class="header">
+<header class="header header_saved">
   <div class="header__container layout">
     <a href="../index.html" class="header__logo header__logo_dark" lang="en" title="Ссылка на главную страницу с поиском">NewsExplorer</a>
     <button type="button" class="header__toggle header__toggle_dark_closed"></button>
     <nav class="header__nav">
       <div class="popup popup_type_nav-links"></div>
       <ul class="header__nav-links">
-        <li class="header__nav-item header__nav-item_visible">
+        <li class="header__nav-item header__nav-item_main header__nav-item_visible">
           <a href="../index.html" class="header__nav-link header__nav-link_theme_dark-disabled" title="Обратно на главную страницу с поиском">Главная</a>
         </li>
-        <li class="header__nav-item header__nav-item_visible">
+        <li class="header__nav-item header__nav-item_articles header__nav-item_visible">
           <a href="../articles/index.html" class="header__nav-link header__nav-link_theme_dark-active" title="Ссылка на страницу с сохранёнными статьями... но мы уже и так тут">Сохранённые статьи</a>
         </li>
-        <li class="header__nav-item">
+        <li class="header__nav-item header__nav-item_auth">
           <button type="button" class="button header__button header__button_dark">
             Авторизоваться
           </button>
         </li>
-        <li class="header__nav-item header__nav-item_visible">
-          <button type="button" class="button header__button header__button_dark header__button_login_dark">
-            Игорь
+        <li class="header__nav-item header__nav-item_login header__nav-item_visible">
+          <button type="button" class="button header__button header__button_login header__button_dark header__button_login_dark">
           </button>
         </li>
       </ul>
@@ -57,15 +56,8 @@
   <section class="details">
     <div class="details__container layout">
       <h1 class="details__title">Сохранённые статьи</h1>
-      <p class="details__counting-articles">
-        Игорь, у вас 5 сохранённых статей
-      </p>
-      <p class="details__keywords">
-        По ключевым словам:
-        <strong class="details__accent">Природа</strong>,
-        <strong class="details__accent">Тайга</strong> и
-        <strong class="details__accent">2 другим</strong>
-      </p>
+      <p class="details__counting-articles"></p>
+      <p class="details__keywords"></p>
     </div>
   </section>
 
@@ -82,127 +74,8 @@
     </p>
   </section>
 
-  <section class="articles articles_is-opened">
-    <div class="article-list layout">
-      <div class="article">
-        <div class="article__action-container">
-          <p class="article__search-keyword">Природа</p>
-          <p class="article__action-description">
-            Убрать из сохранённых
-          </p>
-          <button type="button" class="article__action-button article__action-button_delete-article"></button>
-        </div>
-        <a href="https://coronavirus.medium.com/" class="article__link" target="_blank">
-          <img src="../<%=require('../../images/back-test3.jpg')%>" alt="Фотография фикуса" class="article__image">
-          <div class="article__description-container">
-            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="article__title">
-              Национальное достояние – парки
-            </h6>
-            <p class="article__text">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
-              парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="article__source">Дзен</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="article">
-        <div class="article__action-container">
-          <p class="article__search-keyword">Природа</p>
-          <p class="article__action-description">
-            Убрать из сохранённых
-          </p>
-          <button type="button" class="article__action-button article__action-button_delete-article"></button>
-        </div>
-        <a href="https://coronavirus.medium.com/" class="article__link" target="_blank">
-          <img src="../<%=require('../../images/back-test4.jpg')%>" alt="Фотография местности со спутника" class="article__image">
-          <div class="article__description-container">
-            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="article__title">
-              Лесные огоньки: история одной фотографии
-            </h6>
-            <p class="article__text">
-              Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.
-            </p>
-            <p class="article__source">Афиша</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="article">
-        <div class="article__action-container">
-          <p class="article__search-keyword">Тайга</p>
-          <p class="article__action-description">
-            Убрать из сохранённых
-          </p>
-          <button type="button" class="article__action-button article__action-button_delete-article"></button>
-        </div>
-        <a href="https://coronavirus.medium.com/" class="article__link" target="_blank">
-          <img src="../<%=require('../../images/back-test5.jpg')%>" alt="Фотография какого-то растения" class="article__image">
-          <div class="article__description-container">
-            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="article__title">
-              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-            </h6>
-            <p class="article__text">
-              Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </p>
-            <p class="article__source">Медиазона</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="article">
-        <div class="article__action-container">
-          <p class="article__search-keyword">Парки</p>
-          <p class="article__action-description">
-            Убрать из сохранённых
-          </p>
-          <button type="button" class="article__action-button article__action-button_delete-article"></button>
-        </div>
-        <a href="https://coronavirus.medium.com/" class="article__link" target="_blank">
-          <img src="../<%=require('../../images/back-test3.jpg')%>" alt="Фотография фикуса" class="article__image">
-          <div class="article__description-container">
-            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="article__title">
-              Национальное достояние – парки
-            </h6>
-            <p class="article__text">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
-              парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="article__source">Дзен</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="article">
-        <div class="article__action-container">
-          <p class="article__search-keyword">Фотография</p>
-          <p class="article__action-description">
-            Убрать из сохранённых
-          </p>
-          <button type="button" class="article__action-button article__action-button_delete-article"></button>
-        </div>
-        <a href="https://coronavirus.medium.com/" class="article__link" target="_blank">
-          <img src="../<%=require('../../images/back-test4.jpg')%>" alt="Фотография местности со спутника" class="article__image">
-          <div class="article__description-container">
-            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="article__title">
-              Лесные огоньки: история одной фотографии
-            </h6>
-            <p class="article__text">
-              Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.
-            </p>
-            <p class="article__source">Афиша</p>
-          </div>
-        </a>
-      </div>
-    </div>
+  <section class="articles articles_saved">
+    <div class="article-list layout"></div>
     <button type="button" class="articles__show-more">Показать еще</button>
   </section>
 </main>

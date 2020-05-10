@@ -1,6 +1,8 @@
 .header__nav-link_theme_light-active {
   border-bottom: 3px solid white;
   color: white;
+  pointer-events: none;
+  cursor: default;
 }
 
 @media (max-width: 767px) {

@@ -6,6 +6,13 @@
   box-sizing: border-box;
   display: block;
   width: 100%;
+  height: 232px;
+}
+
+@media (max-width: 1279px) {
+  .article__image {
+    height: 151px;
+  }
 }
 
 .article__image::before {

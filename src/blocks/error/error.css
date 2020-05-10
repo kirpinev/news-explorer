@@ -1,4 +1,6 @@
 @import url('_type/_reg/error_type_reg.css');
+@import url('_type/_auth/error_type_auth.css');
+@import url('_type/_search/error_type_search.css');
 
 .error {
   color: red;

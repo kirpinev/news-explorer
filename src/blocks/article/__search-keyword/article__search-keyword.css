@@ -13,6 +13,7 @@
   text-overflow: ellipsis;
   transition: all .2ms ease-in;
   cursor: pointer;
+  display: none;
 }
 
 .article__search-keyword:hover {
