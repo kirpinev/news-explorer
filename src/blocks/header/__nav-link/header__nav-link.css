@@ -1,0 +1,22 @@
+@import url('_theme/_light-active/header__nav-link_theme_light-active.css');
+@import url('_theme/_light-disabled/header__nav-link_theme_light-disabled.css');
+@import url('_theme/_dark-active/header__nav-link_theme_dark-active.css');
+@import url('_theme/_dark-disabled/header__nav-link_theme_dark-disabled.css');
+
+.header__nav-link {
+  padding-bottom: 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .header__nav-link {
+    padding-bottom: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__nav-link {
+    padding-bottom: 0;
+  }
+}

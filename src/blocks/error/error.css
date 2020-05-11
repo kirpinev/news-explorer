@@ -1,0 +1,16 @@
+@import url('_type/_reg/error_type_reg.css');
+@import url('_type/_auth/error_type_auth.css');
+@import url('_type/_search/error_type_search.css');
+
+.error {
+  color: red;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 4px 0 12px 0;
+  height: 13px;
+  font: normal 400 12px/15px Inter, Arial, sans-serif;
+}
+
+.error:nth-of-type(3n) {
+  margin: 4px 0 0 0;
+}

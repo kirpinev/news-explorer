@@ -1,0 +1,3 @@
+.header__button_login_light::after {
+  content: url('../../../../images/logout-light.svg');
+}

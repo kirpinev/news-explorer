@@ -1,0 +1,9 @@
+.header__nav-link_theme_dark-disabled {
+  border-bottom: none;
+  color: #1a1b22;
+  transition: color .2s linear;
+}
+
+.header__nav-link_theme_dark-disabled:hover {
+  color: #b6bcbf;
+}

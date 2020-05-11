@@ -1,0 +1,16 @@
+.author__container {
+  width: 600px;
+  padding-top: 51px;
+}
+
+@media (max-width: 1279px) {
+  .author__container {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .author__container {
+    width: 100%;
+  }
+}

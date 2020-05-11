@@ -1,0 +1,13 @@
+@import url('_is-opened/article__action-description_is-opened.css');
+
+.article__action-description {
+  box-sizing: border-box;
+  font: normal 500 10px/12px Roboto, Arial, sans-serif;
+  color: #000;
+  border-radius: 10px;
+  margin: 0 0 0 5px;
+  background-color: white;
+  display: none;
+  padding: 14px 10px;
+  z-index: 10;
+}

@@ -1,0 +1,27 @@
+@import url('__action-button/article__action-button.css');
+@import url('__action-container/article__action-container.css');
+@import url('__action-description/article__action-description.css');
+@import url('__date/article__date.css');
+@import url('__image/article__image.css');
+@import url('__link/article__link.css');
+@import url('__source/article__source.css');
+@import url('__text/article__text.css');
+@import url('__title/article__title.css');
+@import url('__description-container/article__description-container.css');
+@import url('__search-keyword/article__search-keyword.css');
+
+.article {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 536px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  border-radius: 15px;
+}
+
+.article:hover {
+  box-shadow: 0 0 58px rgba(8, 29, 45, 0.1);
+}

@@ -1,0 +1,4 @@
+.article__action-button_not-added-article::after {
+  content: url('../../../../images/bookmark-black.svg');
+  opacity: .5;
+}

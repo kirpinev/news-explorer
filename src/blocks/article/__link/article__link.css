@@ -1,0 +1,4 @@
+.article__link {
+  text-decoration: none;
+  transition: all .2s linear;
+}

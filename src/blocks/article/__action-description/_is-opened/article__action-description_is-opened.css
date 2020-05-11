@@ -1,0 +1,9 @@
+.article__action-description.article__action-description_is-opened {
+  display: block;
+}
+
+@media (max-width: 1439px) {
+  .article__action-description.article__action-description_is-opened {
+    display: none;
+  }
+}

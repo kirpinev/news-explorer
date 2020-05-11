@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+  .header__nav-links.header__nav-links_opened {
+    visibility: visible;
+    right: 0;
+    display: block;
+    position: absolute;
+  }
+}

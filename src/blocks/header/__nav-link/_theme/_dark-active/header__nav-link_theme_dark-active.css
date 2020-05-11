@@ -1,0 +1,12 @@
+.header__nav-link_theme_dark-active {
+  border-bottom: 3px solid #1a1b22;
+  color: #1a1b22;
+  pointer-events: none;
+  cursor: default;
+}
+
+@media (max-width: 767px) {
+  .header__nav-link_theme_dark-active {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,3 @@
+.header__toggle_light_closed::after {
+  content: url('../../../../images/menu-closed-light.svg');
+}

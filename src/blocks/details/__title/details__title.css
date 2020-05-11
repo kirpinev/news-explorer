@@ -1,0 +1,17 @@
+.details__title {
+  font: normal 400 18px/24px Roboto, Arial, sans-serif;
+  margin: 0;
+  color: #b6bcbf;
+}
+
+@media (max-width: 1100px) {
+  .details__title {
+    font: normal 400 14px/24px Roboto, Arial, sans-serif;
+  }
+}
+
+@media (max-width: 767px) {
+  .details__title {
+    font: normal 400 12px/24px Roboto, Arial, sans-serif;
+  }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+  .header__nav-links.header__nav-links_dark {
+    background-color: #1a1b22;
+  }
+}

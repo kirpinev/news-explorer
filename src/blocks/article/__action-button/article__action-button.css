@@ -1,0 +1,23 @@
+@import url('_not-added-article/article__action-button_not-added-article.css');
+@import url('_added-article/article__action-button_added-article.css');
+@import url('_delete-article/article__action-button_delete-article.css');
+
+.article__action-button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: white;
+  padding: 13px;
+  margin: 0 0 5px 5px;
+  outline: none;
+}
+
+.article__action-button::after {
+  position: relative;
+}
+
+.article__action-button:hover::after {
+  opacity: 1;
+}
