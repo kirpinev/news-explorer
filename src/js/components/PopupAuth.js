@@ -27,6 +27,8 @@ export default class PopupAuth extends Popup {
 
     this.disableFormInputs();
 
+    this.disableButtons();
+
     mainApi
       .signin(inputValues)
       .then(res => {
@@ -52,7 +54,11 @@ export default class PopupAuth extends Popup {
 
         buttonAuthError.textContent = err.message;
       })
-      .finally(() => this.activateFormInputs());
+      .finally(() => {
+        this.activateFormInputs();
+
+        this.activateButtons();
+      });
   }
 
   setHandlers() {

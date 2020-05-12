@@ -16,6 +16,8 @@ export default class Search extends BaseComponent {
 
     this.disableFormInputs();
 
+    this.disableButtons();
+
     articlesBlock.close();
 
     articlesBlock.clearArticles();
@@ -46,6 +48,8 @@ export default class Search extends BaseComponent {
         preloader.close();
 
         this.activateFormInputs();
+
+        this.activateButtons();
       });
   }
 
