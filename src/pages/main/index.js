@@ -22,6 +22,9 @@ import SEARCH_OPTIONS from '../../js/constants/Search';
 import NotFound from '../../js/components/NotFound';
 import NOT_FOUND_OPTIONS from '../../js/constants/not-found';
 
+import RequestError from '../../js/components/RequestError';
+import REQUEST_ERROR_OPTIONS from '../../js/constants/request-error';
+
 import Preloader from '../../js/components/Preloader';
 import PRELOADER_OPTIONS from '../../js/constants/preloader';
 
@@ -63,6 +66,8 @@ const search = new Search(SEARCH_OPTIONS);
 
 const notFound = new NotFound(NOT_FOUND_OPTIONS);
 
+const requestError = new RequestError(REQUEST_ERROR_OPTIONS);
+
 const preloader = new Preloader(PRELOADER_OPTIONS);
 
 const articlesBlock = new ArticlesBlock(ARTICLES_BLOCK_OPTIONS);
@@ -93,7 +98,7 @@ page.saveDependencies({
 
 header.saveDependencies({ popupAuth, mainApi, redirectTo, storage });
 
-search.saveDependencies({ articlesBlock, notFound, preloader, newsApi, storage, validation });
+search.saveDependencies({ articlesBlock, notFound, preloader, requestError, newsApi, storage, validation });
 
 articleCard.saveDependencies({ checkImageUrl, dates, deleteListTags, MONTHS, articleProps, storage, mainApi });
 
