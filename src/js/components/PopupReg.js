@@ -27,6 +27,8 @@ export default class PopupReg extends Popup {
 
     this.disableFormInputs();
 
+    this.disableButtons();
+
     mainApi
       .signup(inputValues)
       .then(res => {
@@ -43,7 +45,11 @@ export default class PopupReg extends Popup {
 
         buttonRegError.textContent = err.message.match(/[а-яА-ЯёЁ]+\s?/g).join(' ');
       })
-      .finally(() => this.activateFormInputs());
+      .finally(() => {
+        this.activateFormInputs();
+
+        this.activateButtons();
+      });
   }
 
   setHandlers() {

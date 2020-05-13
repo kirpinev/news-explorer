@@ -19,10 +19,6 @@ export default class Popup extends BaseComponent {
     form.reset();
   }
 
-  disableButtons() {
-    this.container.querySelector('.button').setAttribute('disabled', true);
-  }
-
   _open() {
     this.container.classList.add('popup_is-opened');
   }

@@ -33,4 +33,12 @@ export default class BaseComponent {
 
     allFormInputs.forEach(input => input.removeAttribute('disabled'));
   }
+
+  disableButtons() {
+    this.container.querySelector('.button').setAttribute('disabled', true);
+  }
+
+  activateButtons() {
+    this.container.querySelector('.button').removeAttribute('disabled');
+  }
 }
