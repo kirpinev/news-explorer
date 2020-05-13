@@ -8,7 +8,7 @@ export default class Search extends BaseComponent {
   submit(event) {
     event.preventDefault();
 
-    const { articlesBlock, notFound, preloader, newsApi, storage } = this._dependencies;
+    const { articlesBlock, notFound, preloader, requestError, newsApi, storage } = this._dependencies;
 
     const { searchInput } = this.elements;
 
@@ -26,6 +26,8 @@ export default class Search extends BaseComponent {
 
     notFound.close();
 
+    requestError.close();
+
     newsApi
       .getNews(keyword)
       .then(res => {
@@ -39,11 +41,15 @@ export default class Search extends BaseComponent {
           articlesBlock.renderArticles(storage.getPropertyValue('articles'));
         } else if (res.status === 'ok' && res.totalResults === 0) {
           notFound.open();
-        } else if (res.status === 'error') {
-          throw new Error(res.message);
+        } else {
+          throw new Error();
         }
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        console.log(err.message);
+
+        requestError.open();
+      })
       .finally(() => {
         preloader.close();
 
